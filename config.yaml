@@ -1,0 +1,61 @@
+baseURL: http://abrunoraise.github.io
+languageCode: en-us
+title: Andrea Bruno Raise
+theme: "toha"
+
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+# Control TOC depth
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Enable global emoji support
+enableEmoji: true
+
+# Site parameters
+params:
+  # Background image of the landing page
+  background: /images/background1.jpg
+
+  # Configure various features of this theme
+  features:
+    # Enable dark theme
+    darkMode:
+      enable: true
+      services:
+        darkreader:
+          defaultColorScheme: system # options are 'system', 'dark', 'light'
+          fixes:
+            invert: ['img[src$=".svg"]'] # inverts svg colors.
+          theme:
+            brightness: 100
+            contrast: 100
+            sepia: 0
+
+  # GitHub repo URL of your site
+  gitRepo: https://github.com/ABrunoRaise/abrunoraise.github.io
+
+  # specify whether you want to write some blog posts or not
+  enableBlogPost: false
+
+  # specify whether you want to show Table of Contents in reading page
+  enableTOC: true
+
+  # Provide newsletter configuration. This feature hasn't been implemented yet.
+  # Currently, you can just hide it from the footer.
+  newsletter:
+    enable: false
+
+  footer:
+    disclaimer:
+      enable: true
+    navigation:
+      customMenus: true

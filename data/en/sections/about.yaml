@@ -1,0 +1,40 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Software Engineer
+# your company information
+company:
+  name: Example Co.
+  url: "https://www.example.com"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "andrea.raise95@gmail.com"
+
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://github.com/ABrunoRaise"
+
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/andrea-raise-4a5042239/"
+
+  - name: Facebook
+    icon: "fab fa-facebook"
+    url: "https://www.facebook.com/andrea.b.raise"
