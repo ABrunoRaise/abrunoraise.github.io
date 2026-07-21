@@ -1,0 +1,31 @@
+{
+  "sum": "4361f74c13e63b12",
+  "dependencySources": {
+    "dependencies": {},
+    "devDependencies": {
+      "@fontsource/mulish": "toha",
+      "@fortawesome/fontawesome-free": "toha",
+      "bootstrap": "toha",
+      "eslint": "toha",
+      "eslint-config-prettier": "toha",
+      "eslint-config-standard": "toha",
+      "eslint-plugin-import": "toha",
+      "eslint-plugin-n": "toha",
+      "eslint-plugin-no-jquery": "toha",
+      "eslint-plugin-promise": "toha",
+      "feather-icons": "toha",
+      "filterizr": "toha",
+      "flag-icons": "toha",
+      "fuse.js": "toha",
+      "highlight.js": "toha",
+      "imagesloaded": "toha",
+      "include-media": "toha",
+      "katex": "toha",
+      "mark.js": "toha",
+      "mermaid": "toha",
+      "plyr": "toha",
+      "popper.js": "toha",
+      "typeit": "toha"
+    }
+  }
+}
