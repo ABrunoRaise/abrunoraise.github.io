@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Search Results</title>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Search</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<link rel="stylesheet" href="/styles/application.template.scss" integrity="" />
+
+
+
+<link rel="canonical" href="http://localhost:1313/search/" />
+
+
+<link rel="stylesheet" href="/application.65b132c667830ef4bacc603ab41bf02c06fee917e431d9990b77bcdbc5150f6a.css" integrity="sha256-ZbEyxmeDDvS6zGA6tBvwLAb&#43;6RfkMdmZC3e828UVD2o=" />
 
 
 
 
 
-<meta property="og:title" content="Search Results" />
-<meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://abrunoraise.github.io/search/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-06-08T08:06:25+06:00" />
-<meta property="article:modified_time" content="2010-06-08T08:06:25+06:00" />
 
 
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Search Results"/>
-<meta name="twitter:description" content="This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```"/>
 
-    
+
+
+
+
+
+<meta property="og:title" content="Br1 site" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Portfolio and personal blog of John Doe." />
+    <meta property="og:image" content="http://localhost:1313/images/author/test.png">
+  <meta property="og:url" content="http://localhost:1313/search/">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Search">
+	<meta name="twitter:description" content="This generated page exists solely to render the search layout.">
+
      
 
     
@@ -40,10 +43,24 @@ Initial setup Search depends on additional output content type of JSON in config
 
 
 
-</head>
 
-  <body class="type-posts kind-page" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
-    <div class="container-fluid bg-dimmed wrapper">
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
+     let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
+if (theme === 'system') {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark'
+  } else {
+    theme = 'light'
+  }
+}
+document.documentElement.setAttribute('data-theme', theme)
+
+    </script>
+    
+  </head>
+
+  <body class="type-search kind-page" data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-offset="80">
+    <div class="container-fluid bg-secondary wrapper">
       
       
     
@@ -59,24 +76,112 @@ Initial setup Search depends on additional output content type of JSON in config
 
 
 
-<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar shadow " id="top-navbar">
   <div class="container">
-      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
-      <span class="navbar-toggler-icon"></span>
+    
+    <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button">
+      <i data-feather="sidebar"></i>
     </button>
+    
     <a class="navbar-brand" href="/">
-      My New Hugo Site</a>
-    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button">
-      <span class="navbar-toggler-icon"></span>
+      Br1 site</a>
+    <button
+      class="navbar-toggler navbar-light"
+      id="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#top-nav-items"
+      aria-label="menu"
+    >
+      <i data-feather="menu"></i>
     </button>
 
-    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
-      <ul class="navbar-nav ml-auto">
-      
-      
+    <div class="collapse navbar-collapse dynamic-navbar" id="top-nav-items">
+      <ul class="nav navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#home">Home</a>
+        </li>
+        
+        
+        
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
+        
+        
+        
+        
+          
+
+  
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="fi fi-us"></span>
+        
+        English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/search">
+            
+                
+                <span class="fi fi-us"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/it/search">
+            
+                
+                <span class="fi fi-it"></span>
+            
+            Italian
+        </a>
+        
+    </div>
+    </li>
+
+        
+        
       </ul>
     </div>
   </div>
+  
   
   
   
@@ -88,6 +193,8 @@ Initial setup Search depends on additional output content type of JSON in config
       
   
   
+    
+  
 
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
@@ -97,7 +204,7 @@ Initial setup Search depends on additional output content type of JSON in config
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/search" data-filter="all">Search</a></li>
             <div class="subtree">
                 
 
@@ -111,28 +218,34 @@ Initial setup Search depends on additional output content type of JSON in config
 
       
       
+<script>
+  document.body.classList.replace('kind-page', 'kind-section');
+</script>
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      <div id="search-results">
+      <div id="search-results" style="display: flex; flex-wrap: wrap;">
 
         <script id="search-result-template" type="text/x-js-template">
           <div class="post-card">
-            <a href="${link}" class="post-card-link">
-              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
+              <div class="card">
                 <div class="card-head">
+                  <a href="${link}" class="post-card-link">
                   <img class="card-img-top" src="${hero}" alt="Card Heading Image">
+                  </a>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">${title}</h5>
-                  <p class="card-text post-summary">${summary}</p>
+                  <a href="${link}" class="post-card-link">
+                    <h5 class="card-title">${title}</h5>
+                    <p class="card-text post-summary">${summary}</p>
+                  </a>
+                  
                 </div>
                 <div class="card-footer">
-                  <span class="float-left">${date}</span>
-                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
+                  <span class="float-start">${date}</span>
+                  <a href="${link}" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
               </div>
-	          </a>
           </div>
         </script>
 
@@ -162,14 +275,21 @@ Initial setup Search depends on additional output content type of JSON in config
 
   
   
+    
+  
+
+  
+  
 
   
   
 
   
   
-
-  
+    
+    
+      
+    
   
 
 
@@ -194,13 +314,44 @@ Initial setup Search depends on additional output content type of JSON in config
 
   <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
     <div class="container pt-5">
-      <div class="row text-left">
+      <div class="row text-start">
         
         <div class="col-md-4 col-sm-12">
           <h5>Navigation</h5>
           
         </div>
         
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>johndoe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>John Doe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=tel:&#43;0123456789 target="_blank" rel="noopener">
+                  <span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
         
         
         
@@ -211,7 +362,7 @@ Initial setup Search depends on additional output content type of JSON in config
               <form method='post' action='https://blogtrottr.com'>
               <div class="form-group">
               <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='http://abrunoraise.github.io/index.xml' />
+              <input type='hidden' name='btr_url' value='http://localhost:1313//index.xml' />
               <input type='hidden' name='schedule_type' value='1' />
               <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
               <button type="submit" class="btn btn-info"> Submit </button>
@@ -226,15 +377,15 @@ Initial setup Search depends on additional output content type of JSON in config
     
     <hr />
     <div class="container">
-      <div class="row text-left">
+      <div class="row text-start">
         <div class="col-md-4">
           <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            <img src="/images/theme-logo_hu_be7279b2506ad3f1.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2023 Copyright.</div>
-        <div class="col-md-4 text-right">
+        <div class="col-md-4 text-center">© 2026 Copyright.</div>
+        <div class="col-md-4 text-end">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
             src="/images/hugo-logo.svg"
@@ -249,8 +400,7 @@ Initial setup Search depends on additional output content type of JSON in config
   </footer>
 
 
-    <script src="/scripts/application.js" integrity="" defer></script>
-
+    <script src="/application.f985dc64cbc4ca92edb96acd7b875df1daf5bbb0409e745971fb304aebca1385.js" integrity="sha256-&#43;YXcZMvEypLtuWrNe4dd8dr1u7BAnnRZcfswSuvKE4U=" defer></script>
 
 
     
