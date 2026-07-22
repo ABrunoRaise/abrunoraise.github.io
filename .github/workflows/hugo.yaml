@@ -9,7 +9,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-    
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.109.0
+      HUGO_VERSION: 0.164.0
       TZ: America/Los_Angeles
     steps:
       - name: Install Hugo CLI
@@ -41,12 +41,12 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7.0.1
         with:
           submodules: recursive
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v6
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
@@ -73,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
