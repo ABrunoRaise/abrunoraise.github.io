@@ -58,8 +58,6 @@ enableEmoji: true
 
 # Site parameters
 params:
-  sass:
-    transpiler: dartsass
   # GitHub repo URL of your site
   gitRepo: https://github.com/ABrunoRaise/abrunoraise.github.io
 
