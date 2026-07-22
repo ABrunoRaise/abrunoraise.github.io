@@ -1,5 +1,9 @@
 {
   "workspaces": [
     "packages/hugoautogen"
-  ]
+  ],
+  "allowScripts": {
+    "core-js@3.49.0": true,
+    "typeit@8.8.7": true
+  }
 }

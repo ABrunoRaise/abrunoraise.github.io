@@ -19,7 +19,7 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="My New Hugo Project">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="Br1 site">
 
 
 
@@ -27,9 +27,11 @@
 
 
 
-<meta property="og:title" content="My New Hugo Project" />
+<meta property="og:title" content="Br1 site" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="" /><meta property="og:url" content="http://localhost:1313/categories/">
+<meta property="og:description" content="Portfolio and personal blog of John Doe." />
+    <meta property="og:image" content="http://localhost:1313/images/author/test.png">
+  <meta property="og:url" content="http://localhost:1313/categories/">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Categories">
@@ -42,7 +44,7 @@
 
 
 
-    <script integrity="sha256-6N/HdTRW44DtfcdqA1u42Z4XgmL1dEmNmLPaA2sgp1o=">
+    <script integrity="sha256-DO4ugzEwhTW1Id1UIWn0gUJWaebCYOypeTit6LW4QB4=">
      let theme = localStorage.getItem('theme-scheme') || localStorage.getItem('darkmode:color-scheme') || 'light'
 if (theme === 'system') {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -99,7 +101,6 @@ document.documentElement.setAttribute('data-theme', theme)
 
 
 
-
   
 
 
@@ -111,7 +112,7 @@ document.documentElement.setAttribute('data-theme', theme)
     </button>
     
     <a class="navbar-brand" href="/">
-      My New Hugo Project</a>
+      Br1 site</a>
     <button
       class="navbar-toggler navbar-light"
       id="navbar-toggler"
@@ -131,9 +132,50 @@ document.documentElement.setAttribute('data-theme', theme)
         
         
         
+          <div id="top-navbar-divider"></div>
+        
+        
+          <li class="nav-item">
+            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+          </li>
         
         
         
+        
+          
+
+  
+  
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+            
+            <span class="fi fi-us"></span>
+        
+        English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/categories">
+            
+                
+                <span class="fi fi-us"></span>
+            
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/it/categories">
+            
+                
+                <span class="fi fi-it"></span>
+            
+            Italian
+        </a>
+        
+    </div>
+    </li>
+
         
         
       </ul>
@@ -150,6 +192,8 @@ document.documentElement.setAttribute('data-theme', theme)
       
       
   
+  
+    
   
 
   <section class="sidebar-section" id="sidebar-section">
@@ -216,14 +260,21 @@ document.documentElement.setAttribute('data-theme', theme)
 
   
   
+    
+  
+
+  
+  
 
   
   
 
   
   
-
-  
+    
+    
+      
+    
   
 
 
@@ -255,6 +306,37 @@ document.documentElement.setAttribute('data-theme', theme)
           
         </div>
         
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:johndoe@example.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>johndoe@example.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>johndoe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/johndoe target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>John Doe</span>
+                </a></li>
+              
+            
+              
+                <li><a href=tel:&#43;0123456789 target="_blank" rel="noopener">
+                  <span><i class="fas fa-phone-alt"></i></span> <span>&#43;0123456789</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
         
         
         
@@ -303,7 +385,7 @@ document.documentElement.setAttribute('data-theme', theme)
   </footer>
 
 
-    <script src="/application.9062876e503c8f9110f462c4bb05d1c4c142da463ecd0a8a7b32464312338bfb.js" integrity="sha256-kGKHblA8j5EQ9GLEuwXRxMFC2kY&#43;zQqKezJGQxIzi/s=" defer></script>
+    <script src="/application.f985dc64cbc4ca92edb96acd7b875df1daf5bbb0409e745971fb304aebca1385.js" integrity="sha256-&#43;YXcZMvEypLtuWrNe4dd8dr1u7BAnnRZcfswSuvKE4U=" defer></script>
 
 
     
