@@ -22,7 +22,8 @@ jobs:
       GO_VERSION: 1.26.5
       HUGO_VERSION: 0.164.0
       NODE_VERSION: 24.18.0
-
+      DART_SASS_VERSION: 1.63.5
+      
       # Set the build time zone
       TZ: Europe/Oslo
     steps:
@@ -53,6 +54,13 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install Dart Sass
+        run: |
+          echo "Installing Dart Sass ${DART_SASS_VERSION}..."
+          curl -sfL --output-dir "${{ runner.temp }}" -O "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          tar -C "${HOME}/.local" -xf "${{ runner.temp }}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          echo "${HOME}/.local/dart-sass" >> "${GITHUB_PATH}"
 
       - name: Install Hugo
         run: |
