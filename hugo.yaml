@@ -1,10 +1,9 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://abrunoraise.github.io
 
 languageCode: en-us
 title: "Br1 site"
 
 # Use Hugo modules to add theme
-
 caches:
   images:
     dir: :cacheDir/images
