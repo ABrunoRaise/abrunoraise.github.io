@@ -64,15 +64,15 @@ params:
   features:
     # Enable portfolio section
     portfolio:
-      enable: true
+      enable: false
 
     # Enable blog posts
     blog:
-      enable: true
+      enable: false
 
     # Enable Table of contents in reading page
     toc:
-      enable: true
+      enable: false
 
   # Configure footer
   footer:
